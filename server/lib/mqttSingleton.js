@@ -9,7 +9,7 @@ class MQTTSingleton {
     if (!instance) {
       instance = this;
       this.client = new MQTT({
-        brokerUrl: process.env.MQTT_BROKER_URL || 'http://10.3.141.1:1883',
+        brokerUrl: process.env.MQTT_BROKER_URL || 'http://192.168.1.100:1883',
       });
     }
 
